@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Excellent Voyage-Travel Agency</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <style>
+        .navbar {
+            color: black;
+            position: relative; /* Ensures the navbar remains in the flow of the document */
+            top: -20px; /* Adjust the value to move it up or down */
+            z-index: 1000; /* Ensures it stays above other elements */
+        }
+
+        /* Add additional styles as needed */
+        /* Customize Google Translate button */
+        .goog-te-menu-value span {
+            color: black !important; /* Change text color of the selection list */
+            font-size: 14px; /* Adjust font size */
+        }
+
+        .goog-te-combo {
+            border-radius: 20px; /* Adjust border radius */
+            background-color: white !important; /* Change background color of the button */
+            color: black !important; /* Change text color of the button */
+            margin-right: 10px; /* Adjust margin */
+        }
+
+        .goog-te-combo-arrow {
+            border-left-color: black !important; /* Change arrow color */
+        }
+
+        /* Style for the dropdown list */
+        .goog-te-menu-value > div {
+            background-color: black; /* Change background color of the dropdown list */
+            color: white !important; /* Change text color of the dropdown list */
+        }
+    </style>
+</head>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Route Aéroport Km 4 Mellita Djerba 4180</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+216 99 731 341</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <!-- Google Translate dropdown -->
+                    <div id="google_translate_element"></div>
+                </div>
+
+                <!-- Google Translate API scripts -->
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <img src="image/logo1.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="first.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Gallery</a>
+                    <a href="package.html" class="nav-item nav-link active">Packages</a>
+                    <div class="nav-item dropdown">
+                        <div class="dropdown-menu m-0">
+                            <a href="destination.html" class="dropdown-item">Destination</a>
+                            <a href="booking.html" class="dropdown-item">Booking</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    <!-- Navbar & Hero End -->
+
+    <!-- Contact Section Start -->
+    <div class="container-xxl py-5 wow fadeInUp booking-section" data-wow-delay="0.1s">
+        <div class="container mt-5"> <!-- Increased margin-top -->
+            <div class="booking p-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white">
+                        <h6 class="text-white text-uppercase">Booking</h6>
+                        <h1 class="text-white mb-4">Online Booking</h1>
+                        <p class="mb-4">Book now and embark on an unforgettable journey filled with adventure, discovery, and cherished memories. We will contact you as soon as your booking is confirmed.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-white mb-4">Book A Tour</h1>
+                        <form id="bookingForm" action="https://formspree.io/f/mzzpvjbr" method="POST">
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" name="name" class="form-control bg-transparent" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" name="email" class="form-control bg-transparent" placeholder="Your Email" required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" name="date_time" placeholder="Booking Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Booking Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <select name="destination" class="form-select bg-transparent" id="select1" required>
+                                            <option value="" disabled selected>Select Destination</option>
+                    <option value="Island tour half-day">Island tour half-day</option>
+                    <option value="Island tour full day">Island tour full day</option>
+                    <option value="Matmata-Douz">Matmata-Douz</option>
+
+
+                    <option value="Tataouine-Chenini">Tataouine-Chenini</option>
+                    <option value="ksar Ghilane-Matmata">ksar Ghilane-Matmata</option>
+                    <option value="Ksar Ghilane one Day">Ksar Ghilane one Day</option>
+                    <option value="Ksar Ghilane two Days">Ksar Ghilane two Days</option>
+                    <option value="Ksar Ghilane-Tozeur 4 Days">Ksar Ghilane-Tozeur 4 Days</option>
+
+
+
+                    <option value="Tunisian Desert Quad Ride at Ksar Ghilane">Tunisian Desert Quad Ride at Ksar Ghilane</option>
+                    <option value="Camping in the Desert">Camping in the Desert</option>
+                    <option value="Tozeur two Days">Tozeur two Days</option>
+
+
+                    <option value="Djerba-Chenini 3 days">Djerba-Chenini 3 days</option>
+                    <option value="4x4 Tour in Southern Tunisia: 7 Days">4x4 Tour in Southern Tunisia: 7 Days</option>
+                    <option value="Trekking Tour in Southern Tunisia: 4 Days">Trekking Tour in Southern Tunisia: 4 Days</option>
+
+
+                    <option value="Trekking in the Footsteps of Berbers and Nomads: 8 Days">Trekking in the Footsteps of Berbers and Nomads: 8 Days</option>
+                    <option value="Star wars tour 4 Days">Star wars tour 4 Days</option>
+                </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <textarea name="message" rows="5" class="form-control bg-transparent" placeholder="Your Message" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="path/to/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        if(window.history.replaceState){
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</body>
+</html>

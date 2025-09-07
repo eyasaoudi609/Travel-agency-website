@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist - Travel Agency</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    
+    <!-- Favicon -->
+    <link href="image/favicon.ico" rel="icon">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Template Stylesheet -->
+    <link href="css/home.css" rel="stylesheet">
+    
+    <style>
+        .top-bar-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        
+        .contact-info small {
+            margin-right: 20px;
+        }
+        
+        .language-dropdown {
+            margin-left: 20px;
+        }
+        
+        .language-dropdown .dropdown-toggle {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            background-color: #fff;
+            color: #333;
+            box-shadow: none;
+        }
+        
+        .language-dropdown .dropdown-menu {
+            font-size: 14px;
+            border-radius: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .language-dropdown .dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+        }
+        
+        .language-dropdown .dropdown-item img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 767.98px) {
+            .contact-info {
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            
+            .contact-info small {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .language-dropdown {
+                margin-left: 0;
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Chargement...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="top-bar-container">
+        <div class="contact-info">
+            <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i>Aéroport Road Km 4 Mellita Djerba 4180</small>
+            <small class="me-3"><i class="fa fa-phone-alt me-2"></i>+216 99 731 341</small>
+            <small><i class="fa fa-envelope-open me-2"></i>signaturesauthentiques.tunisie@gmail.com</small>
+        </div>
+        <div class="language-dropdown">
+            <!-- Language Dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="image/eng.png" alt="Current Language" style="width: 20px;"> English
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item" href="4fr.html"><img src="image/fr.png" alt="French" style="width: 20px;"> Français</a></li>
+                    <li><a class="dropdown-item" href="4.html"><img src="image/eng.png" alt="English" style="width: 20px;"> English</a></li>
+                    <li><a class="dropdown-item" href="4italy.html"><img src="image/italy.png" alt="Italian" style="width: 20px;"> Italiano</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <img src="image/logo1.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="first.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="package.html" class="nav-item nav-link active">Packages</a>
+                    <div class="nav-item dropdown">
+                        
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Ksar Ghilane </h1>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-5 justify-content-center"> <!-- Center aligning the row -->
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <h1 class="mb-4 text-center">Signature Ksar Ghilane<span class="text-blue1"> Matmata</span></h1> 
+
+                                <h6 class="section-title bg-white text-start text-small pe-3">EXCURSION PROGRAM </h6>
+
+                                <!-- <h1 class="mb-4 text-center">Welcome to <span class="text-blue1">Excellent Voyage</span></h1> Center aligning the heading -->
+                    <p class="mb-4 text-dark" style="text-align: justify;">Departure from the hotel via the Roman road.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Coffee break at Loubigla.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Continuation towards the Ksar Ghilane oasis, surrounded by vast ochre sand dunes (Eastern Erg).</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Arrival at Ksar Ghilane, free time to admire the oases around the hot spring. Swimming in the hot spring.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Possibility of camel rides or quad biking as options.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Lunch.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Departure to Matmata and visit to a troglodyte house with the locals. Enjoying a good rosemary tea and homemade bread served with olive oil and honey.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Return to Djerba.</p>
+
+                        <div style="display: inline;">
+                            <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 5 individuals: 60 Euros.</p>
+                            <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 4 individuals: 70 Euros.</p>
+                            <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 3 individuals: 90 Euros.</p>
+                            <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 2 individuals: 120 Euros.</p>
+                        </div>
+                        <p class="mb-0 text-dark" style="font-weight: bold; color: #FE8800;">The price includes:</p>
+                        <span class="mb-0 text-dark">- Transportation by 4x4 vehicle</span><br>
+                        <span class="mb-0 text-dark">- Service of a guide accredited by the ONTT</span><br>
+                        <span class="mb-0 text-dark">- Lunch</span><br>
+                        <span class="mb-0 text-dark">- Entrance fees to the visits scheduled in the program
+                        </span><br>
+                        <p class="mb-0 text-dark" style="font-weight: bold;">The price does not include:</p>
+                        <span class="mb-0 text-dark">- Drinks</span><br>
+                        <span class="mb-0 text-dark">- Tips</span><br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- matmata douz end -->
+    <!-- ksar ghilane start -->
+    
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-5 justify-content-center"> <!-- Center aligning the row -->
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <h1 class="mb-4 text-center">Ksar Ghilane<span class="text-blue1"> One Day</span></h1> 
+
+                                <h6 class="section-title bg-white text-start text-small pe-3">EXCURSION PROGRAM </h6>
+                               
+                                
+                          
+                                <!-- <h1 class="mb-4 text-center">Welcome to <span class="text-blue1">Excellent Voyage</span></h1> Center aligning the heading -->
+                    <p class="mb-4 text-dark" style="text-align: justify;">Departure from the hotel via the Roman road.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Coffee break at Loubigla.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Continuation towards Ain El Anba, photo stop.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Continuation towards the Ksar Ghilane oasis, surrounded by vast ochre sand dunes (Eastern Erg).</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Arrival at Ksar Ghilane, free time to admire the oases around the hot spring. Swimming in the hot spring.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Lunch.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Visit to the Ksar El Halouf granary.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Return to Djerba.</p>
+
+                        <div style="display: inline;">
+                            <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 5 individuals: 50 Euros.</p>
+                            <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 4 individuals: 60 Euros.</p>
+                            <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 3 individuals: 80 Euros.</p>
+                            <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 2 individuals: 110 Euros.</p>
+                        </div>
+                        <p class="mb-0 text-dark" style="font-weight: bold; color: #FE8800;">The price includes:</p>
+                        <span class="mb-0 text-dark">- Transportation by 4x4 vehicle</span><br>
+                        <span class="mb-0 text-dark">- Service of a guide accredited by the ONTT</span><br>
+                        <span class="mb-0 text-dark">- Lunch</span><br>
+                        <span class="mb-0 text-dark">- Entrance fees to the visits scheduled in the program
+                        </span><br>
+                        <p class="mb-0 text-dark" style="font-weight: bold;">The price does not include:</p>
+                        <span class="mb-0 text-dark">- Drinks</span><br>
+                        <span class="mb-0 text-dark">- Tips</span><br>
+
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    <!-- ksar ghilane end -->
+
+
+        <!-- ksar ghilane 2days start -->
+    
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 justify-content-center"> <!-- Center aligning the row -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h1 class="mb-4 text-center">Ksar Ghilane <span class="text-blue1">2 Days/ 1 Night</span></h1> 
+
+                        <h6 class="section-title bg-white text-start text-small pe-3">EXCURSION PROGRAM </h6>
+                        <p class="mb-0 text-dark" style="font-weight: bold;">Day 1: </p>
+
+
+                        <!-- <h1 class="mb-4 text-center">Welcome to <span class="text-blue1">Excellent Voyage</span></h1> Center aligning the heading -->
+            <p class="mb-4 text-dark" style="text-align: justify;">Departure from the hotel via the Roman road towards Tataouine.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Stop at Chahbania for a photo break at the salt lake.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Arrival in Tataouine, visit the market and the city center.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Continuation to Chenini, a village perched on the mountainside, for a walking tour.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Lunch in Chenini.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Departure to reach the Ksar Ghilane oasis surrounded by vast ochre sand dunes.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Possibility of swimming in the hot spring.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Departure by 4*4 along the track for a night in the Tunisian desert, to the Saharan camp.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Settlement, sunset over the desert, sandbread baking ceremony.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Dinner and overnight stay in the Tunisian desert under private tents.</p>
+
+            <p class="mb-0 text-dark" style="font-weight: bold;">Day 2: </p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Breakfast.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Departure to Matmata via the Berber village of Tamezret.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Lunch.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Photo stop at the Berber village of Toujane.</p>
+            <p class="mb-4 text-dark" style="text-align: justify;">Return to Djerba.</p>
+
+                <div style="display: inline;">
+                    <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 5 individuals: 150 Euros.</p>
+                    <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 4 individuals: 160 Euros.</p>
+                    <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 3 individuals: 190 Euros.</p>
+                    <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person for 2 individuals: 240 Euros.</p>
+                </div>
+                <p class="mb-0 text-dark" style="font-weight: bold; color: #FE8800;">The price includes:</p>
+                <span class="mb-0 text-dark">- Transportation by 4x4 vehicle</span><br>
+                <span class="mb-0 text-dark">- Service of a guide accredited by the ONTT</span><br>
+                <span class="mb-0 text-dark">- Overnight stay in tents with all meals</span><br>
+                <span class="mb-0 text-dark">- Entrance fees to the visits scheduled in the program
+                </span><br>
+                <p class="mb-0 text-dark" style="font-weight: bold;">The price does not include:</p>
+                <span class="mb-0 text-dark">- Drinks</span><br>
+                <span class="mb-0 text-dark">- Tips</span><br>
+
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+</div>
+<!-- ksar ghilane 2days end -->
+
+
+
+
+   <!-- quad ride start -->
+    
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-5 justify-content-center"> <!-- Center aligning the row -->
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                                    <img src="image/quad_tunisie10.jpg" alt="" class="img-fluid centered-image">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <h1 class="mb-4 text-center"> Tunisian Desert Quad Ride at <span class="text-blue1">Ksar Ghilane</span></h1> 
+                                
+                                <h6 class="section-title bg-white text-start text-small pe-3">EXCURSION PROGRAM </h6>
+
+              
+
+
+                                <!-- <h1 class="mb-4 text-center">Welcome to <span class="text-blue1">Excellent Voyage</span></h1> Center aligning the heading -->
+                    <p class="mb-4 text-dark" style="text-align: justify;">Departure from the hotel via the Roman road.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Coffee break at Loubigla.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Continuation towards Ain El Anba, photo stop.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Continuation towards the Ksar Ghilane oasis, surrounded by vast ochre sand dunes (Eastern Erg).</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Arrival at Ksar Ghilane, meeting with the Quad guide for conquering the sand dunes of the Grand Eastern Erg (quad circuit loop ride lasting around 3 hours).</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Lunch.</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Swimming in the hot spring (optional).</p>
+                    <p class="mb-4 text-dark" style="text-align: justify;">Return to Djerba.</p>
+                    
+
+                        <div style="display: inline;">
+                            <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i>Price per person: starting from 110 Euros (Minimum 04 Persons).</p>
+                        <p class="mb-0 text-dark" style="font-weight: bold; color: #FE8800;">The price includes:</p>
+                        <span class="mb-0 text-dark">- Transportation by 4x4 vehicle</span><br>
+                        <span class="mb-0 text-dark">- Service of a guide accredited by the ONTT</span><br>
+                        <span class="mb-0 text-dark">- Lunch</span><br>
+                        <span class="mb-0 text-dark">- Entrance fees to the visits scheduled in the program
+                        </span><br>
+                        <p class="mb-0 text-dark" style="font-weight: bold;">The price does not include:</p>
+                        <span class="mb-0 text-dark">- Drinks</span><br>
+                        <span class="mb-0 text-dark">- Tips</span><br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- quad ride end -->
+
+    <div class="d-flex justify-content-center mb-2">
+        <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+    </div>
+
+ 
+
+
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Company</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Privacy Policy</a>
+                <a class="btn btn-link" href="">Terms and Conditions</a>
+                <a class="btn btn-link" href="">FAQs and Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Airport Road Km 4 Mellita Djerba 4180</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+216 99 731 341</p>
+
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Gallery</h4>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bg1.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bg2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bf6.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bf8.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bf9.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bg11.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Thank You</h4>
+                <p>Thank you for choosing us, we promise you an extraordinary experience.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="https://freewebsitecode.com">Authentic Signatures Tunisia</a>, All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="first.html">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<script>
+    function changeLanguage(page) {
+        window.location.href = page;
+        return false; // Prevents the default behavior of the anchor tag
+    }
+</script>
+<script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+<script  src="js/script.js"></script>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

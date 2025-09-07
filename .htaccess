@@ -1,0 +1,3 @@
+# Redirect to home.php
+DirectoryIndex home.html
+

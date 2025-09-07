@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tourist - Travel Agency</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    
+    <!-- Favicon -->
+    <link href="image/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/home.css" rel="stylesheet">
+    <style>
+        .contact-info {
+            white-space: nowrap;
+        }
+        .email {
+            white-space: nowrap;
+        }
+
+        .phone-number {
+            white-space: nowrap; /* Empêche les sauts de ligne */
+            margin-right: 10px; /* Ajuste l'espacement entre les numéros de téléphone */
+        }
+
+        .language-selection {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .language-selection a {
+            text-decoration: none;
+            color: #ffffff;
+            margin-left: 10px;
+        }
+
+        /* Customize Google Translate button */
+        .goog-te-menu-value span {
+            color: black !important; /* Change text color of the selection list */
+            font-size: 14px; /* Adjust font size */
+        }
+
+        .goog-te-combo {
+            border-radius: 20px; /* Adjust border radius */
+            background-color: white !important; /* Change background color of the button */
+            color: black !important; /* Change text color of the button */
+            margin-right: 10px; /* Adjust margin */
+        }
+
+        .goog-te-combo-arrow {
+            border-left-color: black !important; /* Change arrow color */
+        }
+
+        /* Style for the dropdown list */
+        .goog-te-menu-value > div {
+            background-color: black; /* Change background color of the dropdown list */
+            color: white !important; /* Change text color of the dropdown list */
+        }
+        
+    .btn-success {
+        background-color: #86B817;
+        border-color: #86B817;
+    }
+    .btn-success:hover {
+        background-color: #86B817;
+        border-color: #86B817;
+    }
+
+    </style>
+</head>
+
+<body>
+<!-- Spinner Inizio -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Caricamento...</span>
+    </div>
+</div>
+<!-- Spinner Fine -->
+
+ <!-- Topbar Inizio -->
+ <div class="language-selection">
+    <a href="packagefr.html"><img src="image/fr.png" alt="Francese" style="width: 20px; margin-right: 5px;"> Français</a>
+    <a href="packagefr.html"><img src="image/eng.png" alt="Inglese" style="width: 20px; margin-right: 5px;"> English</a>
+    <a href="packageitaly.html"><img src="image/italy.png" alt="Italiano" style="width: 20px; margin-right: 5px;"> Italiano</a>
+</div>
+<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <div class="contact-info text-light">
+                    <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i>Aéroport Road Km 4 Mellita Djerba 4180</small>
+                    <small class="me-3"><i class="fa fa-phone-alt me-2"></i>+216 99 731 341   </small>
+                    <small><i class="fa fa-phone-alt me-2"></i>+33 617 782 382</small>
+                    <small><i class="fa fa-envelope-open me-2"></i>signaturesauthentiques.tunisie@gmail.com</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <!-- Menu a discesa di Google Translate -->
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fine della barra superiore -->
+
+<!-- Navbar & Hero Inizio -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <img src="image/logo1.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="ithome.html" class="nav-item nav-link ">Home</a>
+                <a href="aboutitaly.html" class="nav-item nav-link ">Chi siamo</a>
+                <a href="galleryitaly.html" class="nav-item nav-link">Galleria</a>
+                <a href="packageitaly.html " class="nav-item nav-link active ">Pacchetti</a>
+                <div class="nav-item dropdown">
+                    
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contatto</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Pacchetti</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="ithome.html">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Pacchetti</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Navbar & Hero Fine -->
+
+
+
+
+
+            
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-small px-3">Pacchetti</h6>
+                <h1 class="mb-5 services-title">Nos Forfaits</h1>
+
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="image/ile1.png" alt="" style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Tour dell'isola</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>Una giornata</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>1 Persona</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">A partire da €30.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                Quest'isola tunisina è affascinante e ricca di tesori. Offre numerosi piaceri che aspettano solo di essere scoperti. Scoprite l'abbondanza di ricchezze che possiede.</p>
+                                <div class="d-flex justify-content-center mb-2">
+                                    <a href="1italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                                    <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+        
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="image/mat.jpg" alt="" style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Matmata-Douz</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>Una giornata</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Persone</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">A partire da €70.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Conosciuta come la Porta del Sahara, era l'oasi più importante della regione, famosa per la sua palmetta. Vivrete notti magiche nel mezzo di magnifiche dune di sabbia bianca.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="2italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                                <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+
+
+
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="image/chenini.jpg" alt="" style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Tataouine-Chenini</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>Una giornata</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Persone</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">A partire da €60.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Una regione desertica con magnifici paesaggi ocra, vicina alle tradizioni berbere in via di estinzione e ai villaggi trogloditi arroccati sulle colline.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="3italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                                <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- Inizio Pacchetto -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <!-- <h6 class="section-title bg-white text-center text-small px-3">Pacchetti</h6> -->
+            <!-- <h1 class="mb-5 services-title">I nostri pacchetti</h1> -->
+
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="image/ksar-ghilane-eau-chaude.jpg" alt="" style="height: 250px;width: 355px; object-fit: cover;">
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Ksar Ghilane-Matmata</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>Una giornata</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Persone</small>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">A partire da €60.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p>
+                            Scopri la tranquillità di un'oasi con una sorgente calda naturale, fai un giro in cammello e conquista le dune di sabbia in quad.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="4italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                            <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="image/camp.png" alt="" style="height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Deserto</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>2 giorni</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Persone</small>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">A partire da €150.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p>Vivete un'avventura indimenticabile con una notte trascorsa in campeggio nel deserto, permettendovi di immergervi completamente nel paesaggio unico del Sahara.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="5italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                            <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="image/tozeur.jpg" alt="" style="height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Tozeur</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>2 giorni</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>4 Persone</small>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">A partire da €165.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p>Una città tunisina situata al confine tra le montagne dell'Atlante e il deserto del Sahara, che offre un paesaggio affascinante di palmeti e oasi.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="6italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                            <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Package End -->
+
+<!-- Pacchetto Inizio -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <!-- <h6 class="section-title bg-white text-center text-small px-3">Pacchetti</h6> -->
+            <!-- <h1 class="mb-5 services-title">I nostri pacchetti</h1> -->
+
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="image/dj-chenini.jpg" alt="" style="height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Djerba-Chenini</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 giorni</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Persone</small>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">A partire da €210.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p>
+                            Immergiti nel mondo dei Berberi e del deserto. Esplora i ksar della regione e passa una notte nelle camere troglodite.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="7italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                            <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="image/south.jpg" alt="" style="height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Ksar Ghailane-Tozeur</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>Una giornata</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>4 Persone</small>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">A partire da €450.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p>Ricco di cultura berbera e paesaggi mozzafiato, il sud della Tunisia offre un mix indimenticabile di storia e bellezza naturale.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="8italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                            <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="image/sud.jpg" alt="" style="height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Sud tunisino</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>7 giorni</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>4 Persone</small>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">A partire da €670.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p>Il sud della Tunisia offre paesaggi affascinanti, dalle vaste distese del deserto del Sahara alle pittoresche oasi di montagna.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="9italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                            <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota adesso</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
+
+            <!-- Inizio Pacchetto -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <!-- <h6 class="section-title bg-white text-center text-small px-3">Pacchetti</h6> -->
+            <!-- <h1 class="mb-5 services-title">I nostri pacchetti</h1> -->
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="image/sudd.jpg" alt="" style="height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Sud tunisino</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>4 giorni</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>4 Persone</small>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">A partire da €320.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p>
+                            Un paese di antica storia, dove le tradizioni nomadi e la cultura berbera si fondono armoniosamente con la bellezza austera del paesaggio desertico.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="10otaly.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                            <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+<!-- Fine Pacchetto -->
+
+
+
+
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="package-item">
+        <div class="overflow-hidden">
+            <img class="img-fluid" src="image/campsud.jpg" alt="" style="height: 250px; object-fit: cover;">
+        </div>
+        <div class="d-flex border-bottom">
+            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Sud tunisino</small>
+            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>8 giorni</small>
+            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>4 Persone</small>
+        </div>
+        <div class="text-center p-4">
+            <h3 class="mb-0">A partire da €560.00</h3>
+            <div class="mb-3">
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+            </div>
+            <p>
+                Imbarcati in un viaggio immersivo per ripercorrere le strade dei Berberi e dei nomadi attraverso paesaggi accidentati e tradizioni ancestrali in questa avventura di trekking di 8 giorni.</p>
+            <div class="d-flex justify-content-center mb-2">
+                <a href="11italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="package-item">
+        <div class="overflow-hidden">
+            <img class="img-fluid" src="image/star.jpg" alt="" style="height: 250px; object-fit: cover;">
+        </div>
+        <div class="d-flex border-bottom">
+            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Sito di Star Wars</small>
+            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>4 giorni</small>
+            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>4 Persone</small>
+        </div>
+        <div class="text-center p-4">
+            <h3 class="mb-0">A partire da €410.00</h3>
+            <div class="mb-3">
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+            </div>
+            <p>La Tunisia ospita luoghi iconici di Star Wars, offrendo ai fan l'opportunità di esplorare i suggestivi paesaggi che hanno servito da sfondo per la leggendaria saga.</p>
+            <div class="d-flex justify-content-center mb-2">
+                <a href="12italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="package-item">
+        <div class="overflow-hidden">
+            <img class="img-fluid" src="image/campsud.jpg" alt="" style="height: 250px; object-fit: cover;">
+        </div>
+        <div class="d-flex border-bottom">
+            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Sud tunisino</small>
+            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>8 giorni</small>
+            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>4 Persone</small>
+        </div>
+        <div class="text-center p-4">
+            <h3 class="mb-0">A partire da €560.00</h3>
+            <div class="mb-3">
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+            </div>
+            <p>
+                Imbarcati in un viaggio immersivo per ripercorrere le strade dei Berberi e dei nomadi attraverso paesaggi accidentati e tradizioni ancestrali in questa avventura di trekking di 8 giorni.</p>
+            <div class="d-flex justify-content-center mb-2">
+                <a href="11italy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Leggi di più</a>
+                <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Prenota qui</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Package End -->
+
+
+
+
+
+
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Società</h4>
+                <a class="btn btn-link" href="">Chi siamo</a>
+                <a class="btn btn-link" href="">Contattaci</a>
+                <a class="btn btn-link" href="">Informativa sulla privacy</a>
+                <a class="btn btn-link" href="">Termini e condizioni</a>
+                <a class="btn btn-link" href="">Domande frequenti e supporto</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contatti</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Airport Road Km 4 Mellita Djerba 4180</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+216 99 737 341</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+33 617 782 382</p>
+
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Galleria</h4>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bg1.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bg2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bf6.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bf8.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bf9.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bg11.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Grazie</h4>
+                <p>Grazie per averci scelto, ti promettiamo un'esperienza straordinaria.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="https://freewebsitecode.com">Firme autentiche Tunisia</a>, Tutti i diritti riservati.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="ithome.html">Home</a>
+                        <a href="">Cookie</a>
+                        <a href="">Aiuto</a>
+                        <a href="">Domande frequenti</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<script>
+    function changeLanguage(page) {
+        window.location.href = page;
+        return false; // Prevents the default behavior of the anchor tag
+    }
+</script>
+<script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+<script  src="js/script.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

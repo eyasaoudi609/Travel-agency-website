@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist - Travel Agency</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    
+    <!-- Favicon -->
+    <link href="image/favicon.ico" rel="icon">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Template Stylesheet -->
+    <link href="css/home.css" rel="stylesheet">
+    
+    <style>
+        .top-bar-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        
+        .contact-info small {
+            margin-right: 20px;
+        }
+        
+        .language-dropdown {
+            margin-left: 20px;
+        }
+        
+        .language-dropdown .dropdown-toggle {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            background-color: #fff;
+            color: #333;
+            box-shadow: none;
+        }
+        
+        .language-dropdown .dropdown-menu {
+            font-size: 14px;
+            border-radius: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .language-dropdown .dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+        }
+        
+        .language-dropdown .dropdown-item img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 767.98px) {
+            .contact-info {
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            
+            .contact-info small {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .language-dropdown {
+                margin-left: 0;
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Chargement...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="top-bar-container">
+        <div class="contact-info">
+            <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i>Aéroport Road Km 4 Mellita Djerba 4180</small>
+            <small class="me-3"><i class="fa fa-phone-alt me-2"></i>+216 99 731 341</small>
+            <small><i class="fa fa-envelope-open me-2"></i>signaturesauthentiques.tunisie@gmail.com</small>
+        </div>
+        <div class="language-dropdown">
+            <!-- Language Dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="image/eng.png" alt="Current Language" style="width: 20px;"> English
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item" href="10fr.html"><img src="image/fr.png" alt="French" style="width: 20px;"> Français</a></li>
+                    <li><a class="dropdown-item" href="10.html"><img src="image/eng.png" alt="English" style="width: 20px;"> English</a></li>
+                    <li><a class="dropdown-item" href="10otaly.html"><img src="image/italy.png" alt="Italian" style="width: 20px;"> Italiano</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <img src="image/logo1.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="first.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="package.html" class="nav-item nav-link active">Packages</a>
+                    <div class="nav-item dropdown">
+                        
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Trekking in the South of Tunisia</h1>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+
+    <!-- tozeur start -->
+   
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-5 justify-content-center"> <!-- Center aligning the row -->
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <h1 class="mb-4 text-center">Trekking in the South of Tunisia <span class="text-blue1"> 4 Days / 3 Nights </span></h1> 
+
+                                <h6 class="section-title bg-white text-start text-small pe-3">EXCURSION PROGRAM </h6>
+
+                                <!-- <h1 class="mb-4 text-center">Welcome to <span class="text-blue1">Excellent Voyage</span></h1> Center aligning the heading -->
+
+                                <p class="mb-4 text-dark" style="text-align: justify; font-weight: bold;">Day 01:</p>
+                                <p class="mb-4 text-dark" style="text-align: justify;">After breakfast, depart by ferry to Douz. Stop at Matmata to visit the troglodyte dwelling where you will be welcomed with a glass of tea, olive oil, and bread... Arrival in Douz and meeting with the camel drivers. Lunch and then follow the rhythmic steps of the camels for a hike of about 2 hours. Upon reaching the campsite, you will gather wood and light the fire with the team. Tent setup. Prepare dinner over an open fire, including the baking of traditional sandbread (bread baked in the embers). Enjoy a typical Bedouin evening around the campfire with camel drivers' songs. Dinner and overnight under the stars.</p>
+                                
+                                <p class="mb-4 text-dark" style="text-align: justify; font-weight: bold;">Days 02-03:</p>
+                                <p class="mb-4 text-dark" style="text-align: justify;">This circuit takes the form of a loop exploring the Grand Erg Oriental to reach the high dunes via water points and wells. Campsites are chosen for their scenic beauty.</p>
+                                
+                                <p class="mb-4 text-dark" style="text-align: justify; font-weight: bold;">Day 04:</p>
+                                <p class="mb-4 text-dark" style="text-align: justify;">After breakfast, continue the trek with a 2-3 hour walk. Lunch and continuation of the walk. Transfer by comfortable vehicle back to Douz and then Djerba.</p>
+                                
+                                <div style="display: inline;">
+                                    <p class="mb-0 text-dark" style="font-weight: bold;"><i class="fa fa-arrow-right text-blue1 me-2" style="display: inline; color: #FE8800;"></i> Price per person: starting from 320 Euros (Minimum 04 persons)</p>
+                                </div>
+                                
+                                <p class="mb-0 text-dark" style="font-weight: bold; color: #FE8800;">The price includes:</p>
+                                <span class="mb-0 text-dark">- Transportation</span><br>
+                                <span class="mb-0 text-dark">- Service of a guide accredited by the ONTT</span><br>
+                                <span class="mb-0 text-dark">- Full-board accommodation</span><br>
+                                <span class="mb-0 text-dark">- Entrance fees to scheduled visits</span><br>
+                                
+                                <p class="mb-0 text-dark" style="font-weight: bold;">The price does not include:</p>
+                                <span class="mb-0 text-dark">- Drinks</span><br>
+                                <span class="mb-0 text-dark">- Tips</span><br>
+                                <span class="mb-0 text-dark">- Options mentioned in the program</span><br>
+                                
+
+    
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tozeur end -->
+
+
+    <div class="d-flex justify-content-center mb-2">
+        <a href="book.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+    </div>
+
+ 
+
+
+    
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Company</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Privacy Policy</a>
+                <a class="btn btn-link" href="">Terms and Conditions</a>
+                <a class="btn btn-link" href="">FAQs and Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Airport Road Km 4 Mellita Djerba 4180</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+216 99 731 341</p>
+
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Gallery</h4>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bg1.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bg2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bf6.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bf8.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bf9.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="image/bg11.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Thank You</h4>
+                <p>Thank you for choosing us, we promise you an extraordinary experience.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="https://freewebsitecode.com">Authentic Signatures Tunisia</a>, All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="first.html">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<script>
+    function changeLanguage(page) {
+        window.location.href = page;
+        return false; // Prevents the default behavior of the anchor tag
+    }
+</script>
+<script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+<script  src="js/script.js"></script>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
