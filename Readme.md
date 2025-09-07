@@ -25,12 +25,12 @@ Database: (MySQL, PostgreSQL, or other)
 
 Clone the repository:
 
-git clone https://github.com/yourusername/travel-agency.git
-cd travel-agency
+git clone https://github.com/eyasaoudi609/Travel-agency-website
 
 📸 Preview
 
 ![Home](<Screenshot 2025-09-07 211920-1.png>)
 ![About us](<Screenshot 2025-09-07 212437.png>)
 ![Contact Us](<Screenshot 2025-09-07 212611.png>)
+
 
