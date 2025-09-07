@@ -1,4 +1,4 @@
-🌍 Signatures Authentiques Tunisia
+🌍 Signatures Authentiques Tunisie
 
 Signatures Authentiques is a travel agency specialized in authentic experiences in Tunisia.
 This project presents a web platform for booking destinations and exploring travel programs.
@@ -17,9 +17,7 @@ This project presents a web platform for booking destinations and exploring trav
 
 Front-end: HTML, CSS, JavaScript
 
-Back-end: (specify your framework: Flask, Django, Node.js, etc.)
-
-Database: (MySQL, PostgreSQL, or other)
+Back-end: Node.js
 
 🚀 Installation and Running
 
@@ -32,5 +30,6 @@ git clone https://github.com/eyasaoudi609/Travel-agency-website
 ![Home](<Screenshot 2025-09-07 211920-1.png>)
 ![About us](<Screenshot 2025-09-07 212437.png>)
 ![Contact Us](<Screenshot 2025-09-07 212611.png>)
+
 
 
